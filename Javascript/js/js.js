@@ -35,6 +35,7 @@ console.log(d);
 console.log(e);
 */
 
+
 /*
 var a = 19;
 var b = 46;
@@ -52,15 +53,52 @@ function checkEqual(param1, param2) {
 checkEqual(19, 46);
 */
 
+
+/*
 var a = 100;
 var b = 100;
 
 function checkEqual(param1, param2) {
     var isEqual = param1 == param2;
     document.write("Uneseni parametri su: " + param1 + " i " + param2);
-    document.write("<br>Uneseni brojevi su jednaki: " + isEqual)
+    document.write("<br>Uneseni brojevi su jednaki: " + isEqual);
 }
 
 checkEqual(100, 100);
+*/
+
+
+/*
+var number1 = prompt("Enter first number");
+var number2 = prompt("Enter second number");
+
+function checkEqual(param1, param2) {
+    document.write("Uneseni parametri su: " + param1 + " i " + param2);
+    return param1 == param2;
+}
+
+var result = checkEqual(number1, number2);
+
+document.write("<br>Uneseni brojevi su jednaki: " + result);
+*/
+
+
+/*
+var number = prompt("Enter number: ");
+
+if (number > 5) {
+    alert("Broj je veci od 5");
+}
+else if (number == 5) {
+    alert("Broj je jednak 5")
+}
+else {
+    alert("Broj je manji od 5");
+}
+*/
+
+
+
+
 
 
