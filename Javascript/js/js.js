@@ -35,13 +35,14 @@ console.log(d);
 console.log(e);
 */
 
+/*
 var a = 19;
 var b = 46;
 
 function checkEqual(param1, param2) {
     document.write("Uneseni parametri su: " + param1 + " i " + param2);
     document.write("<br>")
-    if(param1 === 19 && param2 === 46) {
+    if (param1 === 19 && param2 === 46) {
         document.write("Sarajevo sampion")
     }
     else {
@@ -49,5 +50,17 @@ function checkEqual(param1, param2) {
     }
 }
 checkEqual(19, 46);
+*/
+
+var a = 100;
+var b = 100;
+
+function checkEqual(param1, param2) {
+    var isEqual = param1 == param2;
+    document.write("Uneseni parametri su: " + param1 + " i " + param2);
+    document.write("<br>Uneseni brojevi su jednaki: " + isEqual)
+}
+
+checkEqual(100, 100);
 
 
