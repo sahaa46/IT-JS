@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(24, 21, 21);
+    margin: 55px;
+    text-align: justify;
+    color: white;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: darkred;
+}
+
+a:hover {
+    color: red;
+}
+
+img {
+    width: 30%;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 28%;
+}
