@@ -1,0 +1,50 @@
+body {
+    background-color: #89D6D9;
+    padding: 20px;
+}
+
+table {
+    border: solid;
+    border-color: #CCCCCC;
+}
+
+tr {
+    border-color: #CCCCCC;
+}
+
+th {
+    background-color: #ECE7D7;
+    text-align: center;
+}
+
+td {
+    background-color: #F5F4F2
+}
+
+#naslov {
+    align-content: center;
+}
+
+#div1 {
+    margin:auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 960px;
+}
+
+img {
+    padding: 10px;
+    width: 100px;
+}
+
+#div2 {
+    background-color: #DDDDDD;
+}
+
+#tekst {
+    padding: 10px;
+}
+
+a {
+    padding: 10px;
+}

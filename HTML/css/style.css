@@ -33,6 +33,15 @@ ul {
 #table {
     text-align: center;
     font-size: 40px;
+    color: darkred;
+}
+
+#sarajevo {
+    color: darkred;
+}
+
+#hp {
+    color: darkred;
 }
 
 a {
