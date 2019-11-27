@@ -1,5 +1,6 @@
 // Javascript 1
 
+
 /*
 document.write("ovo je js kod");
 console.log("ispis na konzolu")
@@ -12,7 +13,9 @@ console.log("Uneseni brojevi su: "+numberOne, numberTwo)
 console.log("Rezultat dva broja je: "+all);
 */
 
+
 // Javascript 2
+
 
 /*
 var text = "Danas je lijep dan";
@@ -98,7 +101,118 @@ else {
 */
 
 
+// Javascript 3
 
 
+/*
+var dan = prompt("Da li je dan");
+
+if (dan == "da") {
+    alert("Dobar dan");
+}
+else if (dan == "ne") {
+    alert("Dobro vece");
+}
+else  if{
+    alert("Da ili ne?")
+}
+*/
+
+
+/*
+var dan = confirm("Da li je dan?");
+
+if (dan) {
+    document.write("Dobar dan");
+}
+else {
+    document.write("Dobro vece");
+}
+*/
+
+/*
+var dan = );
+
+alert(confirm("Da li je dan?"?"Dobar dan":"Dobro vece");
+*/
+
+
+/*
+var a = parseInt(prompt("Unesi prvi broj: "));
+var b = parseInt(prompt("Unesi drugi broj: "));
+var result = prompt("Unesi operand: ");
+
+function logical(a, b) {
+
+    switch (result) {
+        case "+":
+            document.write(result = a + b);
+            break;
+        case "-":
+            document.write(result = a - b);
+            break;
+        case "/":
+            document.write(result = a / b);
+            break;
+        case "*":
+            document.write(result = a * b);
+            break;
+        default:
+            alert("Uneseni operand ne postoji");
+    }
+}
+
+logical(a, b)
+*/
+
+
+/*
+var operand1 = parseInt(prompt("Unesite prvi broj"));
+var operand2 = parseInt(prompt("Unesite drugi broj"));
+var operacija = prompt("Unesite operaciju");
+
+function izvrsiOperaciju(op1, op2, op) {
+    switch (op) {
+        case "+":
+            alert(op1 + op2)
+            break;
+        case "-":
+            alert(op1 - op2)
+            break;
+        case "/":
+            alert(op1 / op2)
+            break;
+        case "*":
+            alert(op1 * op2)
+            break;
+        default:
+            alert("Operacija koju ste unijeli nije podrzana")
+            break;
+    }
+}
+izvrsiOperaciju(operand1, operand2, operacija)
+*/
+
+
+// const date1 = new Date;
+// console.log(new Date);
+
+/*
+var date = new Date();
+var trSat = date.getHours();
+
+function whatTime(trenutniSat){
+    if (trenutniSat < 10) {
+        alert("Dobro jutro");
+    }
+    else if (trenutniSat > 10 && trenutniSat < 17) {
+        alert("Dobar dan");
+    }
+    else {
+        alert("Dobro vece");
+    }
+}
+whatTime(16);
+*/
 
 
