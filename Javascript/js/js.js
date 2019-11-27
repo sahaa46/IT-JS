@@ -216,3 +216,61 @@ whatTime(16);
 */
 
 
+// POPRAVI - da pretvara uneseni broj u sve valute
+
+/*
+var km = parseInt(prompt("Unesi iznos u KM"));
+var enteredNum = prompt("enteredNum");
+
+switch (enteredNum) {
+    case "eur":
+        document.write(result = enteredNum * 0.51);
+        break;
+    case "kuna":
+        document.write(resut = enteredNum * 3.81)
+        break;
+    case "funta":
+        document.write(result = enteredNum * 0.44)
+        break;
+}
+*/
+
+
+// NIZOVI  - overapi.com
+
+// var niz = [1, 2, true, "Saha", 3, [10, 12, ["niz u nizu nad nizovima"[[]]], 15]];
+//var drugiClan = niz[2][1];
+// niz[niz.length] = 4;
+// niz.push(19, 46);
+// var index = niz.indexOf("Saha");
+// var index1 = niz.includes("Saha");
+
+// Brisanje elementa iz niza 
+// niz.splice(index, 1);
+
+// Dodavanje oduzimanje
+// niz.unshift("Saha");
+// niz.shift("Saha");
+
+
+// console.log(niz);
+// console.log(niz.length);
+// console.log(drugiClan);
+// console.log(niz.pop());
+// console.log(index);
+// console.log(index1);
+// console.log(niz.sort());
+
+var kurs = {EU: 1.95583, HRK: 4, GBP:2.2, USD: 1.699};
+var valute = Object.keys(kurs);
+
+var iznos = parseInt(prompt("Unesite iznos"));
+var unesenaValuta = prompt("Unesite valutu");
+
+if (valute.includes(unesenaValuta)) {
+    var kursnaVrijednost = kurs[unesenaValuta];
+    var res = iznos+kursnaVrijednost;
+    alert("Vrijednost je: " + res + " " +unesenaValuta)
+}
+
+console.log(valute);
