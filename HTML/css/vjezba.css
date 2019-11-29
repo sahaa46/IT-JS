@@ -15,10 +15,12 @@ tr {
 th {
     background-color: #ECE7D7;
     text-align: center;
+    border: 1px #cccccc solid;
 }
 
 td {
-    background-color: #F5F4F2
+    background-color: #F5F4F2;
+    border: 1px #cccccc solid;
 }
 
 #naslov {
@@ -39,12 +41,20 @@ img {
 
 #div2 {
     background-color: #DDDDDD;
+    padding-bottom: 20px;
 }
 
 #tekst {
     padding: 10px;
+    text-align: justify;
 }
 
 a {
-    padding: 10px;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #FFFFFF;
 }

@@ -1,0 +1,52 @@
+body {
+    background-color: orange;
+}
+
+
+#zeroo {
+    width: 965px;
+    height: 678px;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+}
+
+#first {
+    width: 965px;
+    height: 150px;
+    background-color: #8CC63F;
+    margin-bottom: 15px;
+}
+
+#second {
+    width: 965px;
+    height: 40px;
+    background-color: #534741;
+    margin-bottom: 15px;
+}
+
+#third {
+    width: 660px;
+    height: 400px;
+    background-color: #E6E6E6;
+    margin-bottom: 15px;
+    margin-right: 23px;
+    float: left;
+}
+
+#fourth{
+    width: 280px;
+    height: 400px;
+    background-color: #CCCC99;
+    margin-bottom: 15px;
+    float: right;
+}
+
+#fifth {
+    width: 965px;
+    height: 40px;
+    background-color: #534741;
+    float: left;
+}
+
+
