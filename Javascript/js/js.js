@@ -340,20 +340,21 @@ console.log(res)
 /*
 var arr = [1, 4, 56, -34, -9, 10, 4, 1, 67, -2];
 
-function duplicate(niz) {
-    var obj = {duplicate: [], original: []};
+function dupli(niz) {
+    var duplicate = [];
+    var original = [];
     for (var i = 0; i < niz.length; i++) {
-        if (obj.original.includes(niz[i])) {
-            obj.original.push(niz[i]);
+        if (!original.includes(niz[i])) {
+            original.push(niz[i]);
         }
         else {
-            obj.duplicate.push(niz[i])
+            duplicate.push(niz[i]);
         }
     }
-    return obj;
+    return {d:duplicate,o:original};
 }
-
-console.log(duplicate(arr));
+var res = dupli(arr);
+console.log(res);
 
 
 function negativniBrojevi(niz) {
