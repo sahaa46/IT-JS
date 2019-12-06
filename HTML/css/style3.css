@@ -1,52 +1,82 @@
 body {
-    background-color: orange;
+    background-color: #CC9966;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://i0.wp.com/www.krug99.ba/wp-content/uploads/2014/06/black-pattern-hd-wallpaper.jpg?ssl=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 14px;
 }
 
+h1, h2 {
+    font-family: didot, sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+}
 
-#zeroo {
-    width: 965px;
-    height: 678px;
-    background-color: white;
+p {
+    font-family: Optima, sans-serif;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+#wrapper {
+    width: 950px;
+    background-color: rgba(255,255,255,0.6);
     padding: 15px;
-    margin: auto;
+    margin: 30px auto;
 }
 
-#first {
-    width: 965px;
+#header {
     height: 150px;
     background-color: #8CC63F;
     margin-bottom: 15px;
 }
 
-#second {
-    width: 965px;
+#navbar {
     height: 40px;
     background-color: #534741;
     margin-bottom: 15px;
 }
 
-#third {
-    width: 660px;
-    height: 400px;
+#main {
+    width: 640px;
     background-color: #E6E6E6;
     margin-bottom: 15px;
-    margin-right: 23px;
     float: left;
+    padding: 10px;
 }
 
-#fourth{
-    width: 280px;
-    height: 400px;
+#sidebar {
+    width: 270px;
     background-color: #CCCC99;
     margin-bottom: 15px;
     float: right;
+    padding: 10px;
 }
 
-#fifth {
-    width: 965px;
+#footer {
     height: 40px;
     background-color: #534741;
-    float: left;
+    clear: both;
 }
 
+.druga {
+    color: #8CC63F;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: 'Sulphur Point', sans-serif;
+}
+
+.nav {
+    padding: 1px;
+    text-align: center;
+}
 

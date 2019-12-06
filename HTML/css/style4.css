@@ -1,0 +1,46 @@
+body {
+    background-image: url(https://images.fineartamerica.com/images-medium-large-5/gold-texture-seamless-pattern-light-realistic-shiny-metallic-empty-golden-gradient-template-abstract-metal-decoration-design-for-wallpaper-background-wrapping-fabric-etc-vector-illustration-igor-synyshyn.jpg);
+}
+
+#wrapper {
+    width: 950px;
+    height: 800px;
+    background-color: rgb(255,255,255);
+    margin: 30px auto;
+}
+
+#header {
+    height: 250px;
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 70px;
+    padding-left: 70px;
+    float: left;
+}
+
+#p1 {
+    color: white;
+    float: right;
+    padding-top: 30px;
+    padding-right: 300px;
+    font-size:14px;
+}
+
+.p2 {
+    font-weight: bold;
+}
+
+#main {
+    padding: 40px;
+    text-align: justify;
+}
+
+#footer {
+    width: 950px;
+    height: 20px;
+    background-color: lightblue;
+}
