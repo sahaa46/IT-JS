@@ -369,3 +369,78 @@ function negativniBrojevi(niz) {
 
 console.log(negativniBrojevi(arr));
 */
+
+
+/*
+var s1 = "Hello World";
+var s2 = "From JavaScript";
+var s3 = s1.concat(s2);
+
+function transformStr(s) {
+
+    for (var i = 0; i < s.length; i++) {
+        if (i % 2 === 0) {
+            document.write("<span style = 'color:red'>" + s3[i] + "</span>");
+        }
+        else {
+            document.write("<span style = 'color:white'>" + s3[i] + "</span>");
+        }
+    }
+}
+
+transformStr(s3);
+*/
+
+
+/*
+var niz = [245, 56, 67, 92, 345, "Amir", true];
+
+function calculate(niz) {
+    return niz[Math.floor(Math.random() * niz.length)];
+}
+
+var res = calculate(niz);
+console.log(res);
+*/
+
+
+/*
+var bubanj = [12, 334, 35, 123, 67, 87];
+
+while (true) {
+    var unos = parseInt(prompt("Unesi broj ili prekini igru, prekid 5"));
+    if (unos == 5) {
+        break;
+    }
+    else if (bubanj.includes(unos)) {
+        alert("Osvojili ste bingo!")
+    }
+    else {
+        alert("Zao nam je")
+    }
+}
+*/
+
+
+
+var height = parseInt(prompt("Unesi visinu"));
+var width = parseInt(prompt("Unesi sirinu"));
+var tacke = [3,4,2];
+
+function printMatrix(h, w) {
+    for (var y = 0; y < h; y++) {
+        for (var x = 0; x < w; x++) {
+            document.write("#");
+        }
+        document.write("<br>");
+    }
+}
+
+printMatrix(height, width);
+
+
+
+
+
+
+
