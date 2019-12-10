@@ -168,6 +168,7 @@ document.write("<span style='color:" + ((!(i % 2)) ? "red" : "black") + "'>" + s
  */
 
 
+/*
 var s1 = "Hello World";
 var s2 = "From JavaScript";
 var s3 = s1.concat(s2);
@@ -178,3 +179,306 @@ for(var i=0;i<s3.length;i++){
         document.write("<span style='color:black;'>"+s3[i]+"</span>");
     }
 }
+*/
+
+
+/*
+var unos = prompt("Unesite niz: ");
+var niz = unos.split(',');
+
+function saberi(arr) {
+    var res = 0;
+    for (var i = 0; i < arr.length; i++) {
+    res = res + parseInt(arr[i]);
+    }
+    return res;
+}
+
+var rezultat = saberi(niz);
+alert(rezultat);
+*/
+
+
+/*
+var niz1 = [1, 2, 3, 4, 5, 6];
+var niz2 = [7, 8, 9, 10, 11, 12];
+
+function clanovi(arr1, arr2) {
+    var niz = [];
+    for (var i = 0; i < arr1.length; i++) {
+        niz[i] = arr1[i] + arr2[i];
+    }
+    return niz;
+}
+
+var res = clanovi(niz1, niz2);
+alert(res);
+*/
+
+
+/*
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+*/
+
+
+/*
+var is_Array = function(input) {
+    if (toString.call(input) === "[object Array]")
+    return true;
+    return false;
+};
+console.log(is_Array('Saha'));
+console.log(is_Array([1,2,3]));
+*/
+
+
+/*
+var array_Clone = function(arr1) {
+    return arr1.slice(0);
+};
+console.log(array_Clone([1, 2, 4, 0]));
+console.log(array_Clone([1, 2, [4, 0]]));
+*/
+
+
+/*
+var myColor = ["Red","Green","White","Black"];
+
+function string(str) {
+    for (i = 0; i < str.length; i++){
+        var str1 = myColor.toString();
+        console.log(str1);
+        console.log(str.join('+'));
+        break;
+    }
+};
+string(myColor)
+*/
+
+
+/*
+var enterNum = prompt("Enter numbers as strings");
+var entered = enterNum.split(',');
+
+function calculate(num) {
+    var res = 0;
+    for (var i = 0; i < num.length; i++) {
+        res = res + parseInt(num[i]);
+    }
+    return res;
+}
+var res1 = calculate(entered);
+alert(res1);
+*/
+
+
+/*
+function FirstFactorial(num) {
+
+    // code goes here
+    var num = 4;
+    for (var i = 0; i < num.length; i++){
+      num = num * num-- * num--
+    }
+    return num;
+
+  }
+
+  // keep this function call here
+  console.log(FirstFactorial(readline()));
+*/
+
+
+/*
+var people = ["Greg", "Mary", "Devon", "James"];
+
+for (i = 0; i < people.length; i++) {
+    if (i > 1) {
+        break;
+    }
+    console.log(people[i]);
+};
+console.log("");
+
+for (i = 0; i < people.length; i++) {
+    console.log(people[i]);
+
+};
+console.log(people.shift("Greg"));
+console.log(people);
+console.log(people.shift("James"));
+console.log(people);
+console.log(people.unshift("Matt"));
+console.log(people);
+console.log(people.push("Emin"));
+console.log(people);
+console.log(people.slice(1));
+console.log(people.push("Mary"));
+console.log(people);
+console.log("");
+console.log(people.indexOf("Mary"));
+console.log(people.join());
+console.log(people.splice(3, 0, "Saha"));
+console.log(people);
+*/
+
+
+/*
+var obj = {
+    firstName : "Emin",
+    lastName : "Sahat",
+    occupation : "IT"
+}
+
+console.log(obj.firstName);
+console.log(obj["lastName"]);
+console.log(obj["occupation"]);
+
+delete obj.occupation;
+obj.hobby = "Footbal";
+console.log(obj.hobby);
+console.log(obj.occupation);
+*/
+
+
+// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/* 
+function displayOddNumbers(num) {
+    for (var i = 0; i < num.length; i++) {
+        if (num[i] % 2 !== 0) {
+            console.log(num[i]);
+        }
+    }
+}
+
+displayOddNumbers(numbers);
+*/
+
+
+/*
+function returnEvenNumbers() {
+    for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            console.log(numbers[i]);
+        }
+    }
+}
+returnEvenNumbers();
+*/
+
+
+/*
+function returnFirstOddNumber(num) {
+    for (var i = 0; i < num.length; i++) {
+        if (num[i] % 2 !== 0) {
+            console.log(num[i, 0])
+        }
+    }
+}
+returnFirstOddNumber(numbers);
+*/
+
+
+/*
+function returnFirstEvenNumber(){
+    for(var i = 0; i < numbers.length; i++){
+        if(numbers[i] % 2 === 0){
+            // print out that value!
+            return numbers[i];
+        }
+    }
+}
+*/
+
+
+/*
+function returnFirstHalf(){
+    return numbers.slice(0,numbers.length/2);
+}
+var res= returnFirstHalf(numbers);
+console.log(res);
+*/
+
+
+/*
+function returnSecondHalf  () {
+    return numbers.slice(numbers.length/2);
+}
+var res = returnSecondHalf(numbers);
+console.log(res);
+*/
+
+
+/*
+function add (a, b) {
+    console.log(a + b);
+    
+}
+add(2, 2);
+*/
+
+
+/*
+var myName = "Emin";
+function sayHello(arr) {
+    if (arr === myName) {
+        return "Hello Boss";
+            return "Hello " + arr;
+    }
+}
+var res = sayHello(myName);
+console.log(res);
+*/
+
+
+/*
+function average(arr){
+    var total = 0;
+    for(var i = 0; i < arr.length; i++){
+        total += arr[i];
+    }
+    return total / arr.length;
+}
+var res = average([1, 2, 3, 4, 5, 6])
+console.log(res);
+*/
+
+
+/*
+function createStudent(firstName, lastName){
+    return {
+        firstName: firstName,
+        lastName: lastName
+    }
+}
+var res = createStudent("Emin", "Sahat");
+console.log(res);
+
+var tim = createStudent("Tim", "Garcia");
+var matt = createStudent("Matt", "Lane");
+var elie = createStudent("Elie", "Schoppik");
+
+var students = [tim, matt, elie];
+
+function findStudentByFirstName(name){
+    var lowerCasedName = name.toLowerCase();
+    for(var i = 0; i < students.length; i++){
+        if(students[i].firstName.toLowerCase() === lowerCasedName){
+            return true;
+        }
+    }
+    return false;
+}
+*/
+
+
+
