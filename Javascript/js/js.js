@@ -422,21 +422,126 @@ while (true) {
 */
 
 
-
+/*
 var height = parseInt(prompt("Unesi visinu"));
 var width = parseInt(prompt("Unesi sirinu"));
-var tacke = [3,4,2];
+var tacke = [[2, 7], [3, 6], [1, 8]];
 
-function printMatrix(h, w) {
+function printMatrix(h, w, tacke) {
     for (var y = 0; y < h; y++) {
         for (var x = 0; x < w; x++) {
-            document.write("#");
+            var exists = false;
+            for (var p = 0; p < tacke.length; p++) {
+                if (tacke[p][0] === y && tacke[p][1] === x) {
+                    exists = true;
+                    document.write("0");
+                }
+            }
+            if (!exists)
+                document.write("X");
         }
         document.write("<br>");
     }
 }
 
-printMatrix(height, width);
+printMatrix(height, width, tacke);
+*/
+
+
+/*
+var div = document.getElementById("console");
+div.innerHTML = "Good";
+console.log(div.innerHTML);
+*/
+
+/*
+var nizDivova = document.getElementsByTagName("div");
+nizDivova[0].innerHTML = "Good";
+nizDivova[2].innerHTML = "Good";
+console.log(nizDivova);
+*/
+
+/*
+var nizInputa = document.getElementsByName("Ime");
+nizInputa[0].value = "Good";
+console.log(nizInputa[0].value);
+*/
+
+/*
+var nizDivova = document.getElementsByClassName("console");
+console.log(nizDivova);
+*/
+
+
+/*
+var language = "bs_bs";
+var locales = {
+    "en_us": {
+        hello: "Hello",
+        welcome: "Welcome to our page",
+        how_are_you: "How are you today?",
+        msg: "New div"
+    },
+    "sr_rs": {
+        hello: "Dobar dan",
+        welcome: "Dobro dosli na nasu stranicu",
+        how_are_you: "Kako ste danas?",
+        msg: "Novi div"
+    },
+    "bs_bs": {
+        hello: "Dobar dan",
+        welcome: "Dobro dosli na nasu stranicu",
+        how_are_you: "Kako ste danas?",
+        msg: "Novi div"
+    }
+};
+
+function translate(lang) {
+    var nizDivova = document.getElementsByTagName("div");
+    for (var i = 0; i < nizDivova.length; i++) {
+        nizDivova[i].innerHTML = locales[lang][nizDivova[i].innerHTML];
+    }
+
+}
+
+translate(language);
+*/
+
+
+/*
+var div = document.createElement('div')
+div.innerHTML = "Saha";
+
+var h2 = document.createElement('h2');
+h2.innerHTML = "Emin";
+
+
+document.body.appendChild(div)
+div.appendChild(h2);
+*/
+
+
+/*
+var images = ['https://www.opel-accessories.com/app_get/getImage?image_id=ASOPCL075_E02_001_SIZE4&app_name=ace_gme&width=-1&height=-1',
+    'https://www.jutarnji.hr/migration_catalog/astrag/647692/ALTERNATES/LANDSCAPE_680/astrag',
+    'https://printcarposter.com/images/519149-big.jpg'];
+var image = document.createElement('img');
+document.body.appendChild(image)
+
+var counter = 0;
+
+setInterval(function () {
+    image.src = images[counter]
+    counter++;
+    if (counter >= images.length) {
+        counter = 0;
+    }
+
+
+}, 3000);
+*/
+
+
 
 
 
