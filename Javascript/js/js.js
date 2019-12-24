@@ -542,10 +542,142 @@ setInterval(function () {
 */
 
 
+/*
+var data = [
+    {
+        id: 1,
+        name: 'First car',
+        description: 'Opel Astra H GTC',
+        image: 'https://www.opel-accessories.com/app_get/getImage?image_id=ASOPCL075_E02_001_SIZE4&app_name=ace_gme&width=-1&height=-1'
+    },
+    {
+        id: 2,
+        name: 'Second car',
+        description: 'Opel Astra H GTC',
+        image: 'https://www.jutarnji.hr/migration_catalog/astrag/647692/ALTERNATES/LANDSCAPE_680/astrag'
+    },
+    {
+        id: 3,
+        name: 'Third car',
+        description: 'Opel Astra H GTC',
+        image: 'https://printcarposter.com/images/519149-big.jpg'
+    },
+    {
+        id: 4,
+        name: 'Fourth car',
+        description: 'Opel Astra H GTC',
+        image: 'https://www.jutarnji.hr/migration_catalog/astrag/647692/ALTERNATES/LANDSCAPE_680/astrag'
+    }
+];
+
+var table = cr('table');
+table.border = 1;
+document.body.appendChild(table);
 
 
+var tr = cr('tr');
+table.appendChild(tr);
+tr.style.color = "red";
 
 
+var th_id = cr('th');
+th_id.innerHTML = "#";
+tr.appendChild(th_id);
+th_id.width = 15;
 
+var th_name = document.createElement('th');
+th_name.innerHTML = "Name";
+tr.appendChild(th_name);
+th_name.width = 100;
+
+var th_desc = document.createElement('th');
+th_desc.innerHTML = "Description";
+tr.appendChild(th_desc);
+th_desc.width = 200;
+
+var th_img = document.createElement('th');
+th_img.innerHTML = "Image";
+tr.appendChild(th_img);
+
+for (var i = 0; i < data.length; i++) {
+    var tr1 = document.createElement('tr');
+    tr1.style.background = i % 2 == 0 ? '#ccc' : '#fff';
+    table.appendChild(tr1);
+    var td_id = document.createElement('td');
+    td_id.innerHTML = data[i].id;
+    tr1.appendChild(td_id);
+
+    var td_name = document.createElement('td');
+    td_name.innerHTML = data[i].name;
+    tr1.appendChild(td_name);
+
+    var td_desc = document.createElement('td');
+    td_desc.innerHTML = data[i].description;
+    tr1.appendChild(td_desc);
+
+    var td_img = document.createElement('td');
+    var img = document.createElement("img");
+    img.style.width = "250px";
+    img.src = data[i].image;
+    td_img.appendChild(img);
+    tr1.appendChild(td_img);
+};
+
+function cr(tag) {
+    return document.createElement(tag);
+};
+*/
+
+
+/*
+var niz = [5, 'IT Akademija', 'Sarajevo', true, 'Student', 122, 'PC', -23, new Date()];
+
+
+function remove(item) {
+    console.log(niz);
+    var index = niz.indexOf(item);
+    if (index != -1) {
+        niz.splice(index, 1)
+        console.log(niz);
+
+    }
+    else {
+        console.log('Element nije pronadjen');
+
+    }
+}
+
+remove('Sarajevo');
+*/
+
+
+/*
+var niz = [5, 'IT Akademija', 'Sarajevo', true, 'Student', 122, 'PC', -23, new Date()];
+
+function onlyNum(arr) {
+    for (i = 0; i < niz.length; i++) {
+        var nizBr = [];
+        for (var i = 0; i < niz.length; i++) {
+            if (typeof (niz[i]) == 'number') {
+                nizBr.push(niz[i])
+            }
+        }
+        return nizBr;
+    }
+}
+var res = onlyNum()
+console.log(res);
+*/
+
+
+function print () {
+    for (var i = 5; i > 0; i--) {
+        for (var j = 5; i < 0; i++) {
+            document.write("<br>")
+        }
+        document.write("+");
+    }
+}
+print()
 
 
