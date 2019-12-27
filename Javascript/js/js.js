@@ -670,14 +670,125 @@ console.log(res);
 */
 
 
-function print () {
-    for (var i = 5; i > 0; i--) {
-        for (var j = 5; i < 0; i++) {
-            document.write("<br>")
+/*
+function print() {
+    for (var i = 0; i < 6; i++) {
+        for (var j = 0; j < i; j++) {
+            document.write("*")
         }
-        document.write("+");
+        document.write("<br>")
     }
 }
-print()
+print();
 
+document.write("<br>");
+
+function print1() {
+    for (var i = 5; i > 0; i--) {
+        for (var j = 0; j < i; j++) {
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+}
+print1();
+*/
+
+
+/*
+var str = 'Web Development Tutorial';
+
+function findLength(text) {
+    var word = text.split(' ');
+    var longest = word[0];
+
+    for (var i = 0; i < word.length; i++) {
+        if (word[i].length > longest.length) {
+            longest = word[i];
+        }
+    }
+    return longest;
+}
+
+document.write(findLength('Web Development Tutorial'));
+*/
+
+
+/*
+var arr = [12, 3, 45, 6, 7, 32, 17, 9, 105];
+
+function bubbleSort(niz) {
+    for (var i = 0; i < niz.length; i++) {
+        for (var j = 0; j < niz.length; j++) {
+            if (niz[j] > niz[j + 1]) {
+                var temp = niz[j];
+                niz[j] = niz[j + 1];
+                niz[j + 1] = temp;
+            }
+        }
+    }
+    return niz;
+}
+
+document.write('Bubble sort: ' + bubbleSort(arr));
+document.write('<br>' + 'Sort: ' + arr.sort());
+*/
+
+
+/*
+function clicked() {
+    var svi = document.getElementsByTagName('div');
+    svi[1].innerHTML = svi[0].innerHTML;
+    svi[0].innerHTML = 'Uspjesno si prebacio';
+}
+*/
+
+/*
+var div1 = document.getElementById('div1');
+
+div1.onclick = function () {
+    var svi = document.getElementsByTagName('div');
+    svi[1].innerHTML = svi[0].innerHTML;
+    svi[0].innerHTML = 'Uspjesno si prebacio';
+}
+*/
+
+/*
+var div1 = document.getElementById('div1');
+
+div1.addEventListener('click', clicked);
+
+function clicked() {
+    var svi = document.getElementsByTagName('div');
+    svi[1].innerHTML = svi[0].innerHTML;
+    svi[0].innerHTML = 'Uspjesno si prebacio';
+}
+*/
+
+
+var div = document.createElement('div');
+div.style.cssText = 'width: 400px;height:400px;border:1px solid #bbb';
+
+
+var mousedown = false;
+
+div.onmousedown = function () {
+    console.log('mousedown');
+    mousedown = true;
+}
+div.onmouseup = function () {
+    console.log('mouseup');
+    mousedown = false;
+}
+div.onmousemove = function (event) {
+    if(!mousedown) return;
+    var point = document.createElement('div');
+    point.style.cssText = 'width:5px;height:5px;background:red;position:absolute;';
+    point.style.top = event.clientY+'px';
+    point.style.left = event.clientX+'px';
+    div.appendChild(point);
+    console.log('mousemove')
+}
+
+document.body.appendChild(div);
 
