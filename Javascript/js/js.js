@@ -766,6 +766,7 @@ function clicked() {
 */
 
 
+/*
 var div = document.createElement('div');
 div.style.cssText = 'width: 400px;height:400px;border:1px solid #bbb';
 
@@ -791,4 +792,89 @@ div.onmousemove = function (event) {
 }
 
 document.body.appendChild(div);
+*/
+
+
+/*
+var h = document.createElement('h3');
+h.innerHTML = 'Unesi neki broj';
+document.body.appendChild(h);
+
+var int = document.createElement('input');
+document.body.appendChild(int);
+
+int.onkeyup = function () {
+    var x = int.value;
+    int.style.cssText = 'border-color: 1px solid black;';
+    if (isNaN(x)) {
+        int.style.cssText = 'border-color: red;';
+    }
+}
+*/
+
+
+/*
+var dv = document.createElement('div');
+dv.innerHTML = 'SET MENU';
+document.body.appendChild(dv);
+
+var dv2 = document.createElement('div');
+document.body.appendChild(dv2);
+
+var dv3 = document.createElement('div');
+document.body.appendChild(dv3);
+
+var all = {
+    google: 'https://www.google.com/',
+    yahoo: 'https://www.yahoo.com/',
+    bing: 'https://bing.com/'
+}
+
+
+dv.onclick = function () {
+    var menu = dv3;
+    menu.style.marginTop = '20px';
+    for (var key in all) {
+        var link = document.createElement('a');
+        link.innerHTML = key;
+        link.href = all[key];
+        link.style.cssText = 'border:1px solid red; margin-right:20px;padding:10px;'
+        menu.appendChild(link)
+    }
+};
+*/
+
+
+/*
+var arr = ['https://www.opel-accessories.com/app_get/getImage?image_id=ASOPCL075_E02_001_SIZE4&app_name=ace_gme&width=-1&height=-1',
+    'https://www.jutarnji.hr/migration_catalog/astrag/647692/ALTERNATES/LANDSCAPE_680/astrag',
+    'https://printcarposter.com/images/519149-big.jpg', 'http://cloud.leparking.fr/2019/08/11/17/02/volkswagen-golf-vw-golf-5-gti-edition-30-230-cv_7018494914.jpg'];
+var img = document.getElementById('image');
+var index = 0;
+displayImage(index);
+
+
+function next() {
+    index++;
+    displayImage(index);
+    console.log(index);
+}
+
+function prev() {
+    index--;
+    displayImage(index);
+    console.log(index);
+}
+
+function displayImage(i) {
+    if (index >= arr.length || index < 0) {
+        index = 0;
+    }
+    img.src = arr[index];
+}
+*/
+
+/* amir.ramic@it-akademija.com */
+
+
 
