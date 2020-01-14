@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    background-color: rgb(179, 173, 173);
+    font-weight: bold;
+}
+
+#wrapper {
+    margin: auto;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+}
+
+h1 {
+    padding-top: 45px;
+    text-align: center;
+    color: white;
+    background-color: darkred;
+    margin-top: 0px;
+    height: 100px;
+}
+
+#table {
+    margin-left: 90px;
+    float: left;
+}
+
+.input {
+    width: 230px;
+    height: 30px;
+    font-size: large;
+}
+
+.button1 {
+    width: 100px;
+    background-color: darkred;
+    color: white;
+    font-size: 15px;
+}
+
+.button1:hover {
+    background-color:rgb(158, 0, 0);
+}
+
+.button2 {
+    width: 100px;
+    background-color: darkred;
+    color: white;
+    font-size: 15px;
+}
+
+.button2:hover {
+    background-color:rgb(158, 0, 0);
+}
+
+#main {
+    width: 450px;
+    height: 250px;
+    background-color: darkred;
+    text-align: center;
+    color: white;
+    float: right;
+    margin-right: 400px;
+}
