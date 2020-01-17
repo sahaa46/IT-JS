@@ -11,7 +11,7 @@
 }    */
 
 
-
+/*
 #kockica {
     width: 300px;
     height: 200px;
@@ -40,4 +40,108 @@
     font-weight: bold;
     font-size: 20px;
 }
+*/
+
+
+body {
+    padding: 0;
+    margin: auto;
+    background-color: gainsboro;
+}
+
+#signup {
+    text-align: center;
+    margin-top: 300px;
+    clear: left;
+}
+
+#name {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#lastname {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#email1 {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#password1 {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#username {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#img {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#btnsgn {
+    width: 130px;
+    height: 30px;
+    margin-right: 72px;
+}
+
+#clear {
+    width: 100px;
+    height: 30px;
+}
+
+#logout {
+    display: none;
+    clear: right;
+}
+
+#form {
+    text-align: center;
+    margin-top: 300px;
+    display: none;
+}
+
+#email {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#password {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 20px;
+}
+
+#login {
+    width: 300px;
+    height: 20px;
+}
+
+#hideh1 {
+    display: none;
+}
+
+#err-msg {
+    display: none;
+}
+
+
+
+
+
+
+
 
