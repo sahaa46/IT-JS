@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js "></script>
+</head>
+
+<body ng-app="myApp">
+    <h1>Angular JS</h1>
+
+    <div ng-controller='kontroler'>
+        10 + 20 = {{ 10 + 20 }}
+        <input type="text" ng-model="user.name">   
+        <button ng-click='addTodo'>Add Todo</button> 
+        <span>{{user.name}}</span>
+        <h3>{{user.lastname}}</h3>
+        <h3>{{user.adresa}}</h3>
+        <img ng-src="{{user.slika}}" alt="Slika usera">
+        <div id="todos">
+        <div ng-repeat='todo in todos'>
+            <input type='checkbox'>
+            <span>{{item.name}}</span>
+            <button>Delete</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
