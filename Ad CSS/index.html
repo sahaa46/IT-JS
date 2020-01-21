@@ -37,6 +37,10 @@
         <button id="logout" onclick="logout()">Logout</button>
     </div>
 
+    <div>
+        <button id="signupagain" onclick="signUpAgain()">Sign Up</button>
+    </div>
+
     <div id="signup">
 
         <input type="text" id="name" placeholder="Name"><br>
@@ -44,20 +48,17 @@
         <input type="email" id="email1" placeholder="Email"><br>
         <input type="password" id="password1" placeholder="Password"><br>
         <input type="text" id="username" placeholder="Username"><br>
-        <input type="text" id="img" placeholder="Image URL"><br>
+        <input onkeyup="signUpOnEnter(event)" type="text" id="img" placeholder="Image URL"><br>
         <button id="btnsgn" onclick="signUp()">Sign up</button>
         <button id="clear" onclick="clearForm()">Clear</button>
 
     </div>
-
-
-
-
-
-    <div id="hideh1">
-        <h1>Welcome</h1>
+    <div id="userinfo">
     </div>
 
+    <div id="hideh1">
+        <h1 id="h1">Welcome</h1>
+    </div>
 
     <div id="form">
         <h3>Type your email and password</h3>
@@ -66,7 +67,9 @@
         <br>
 
         <input onkeyup="loginOnEnter(event)" type="password" id="password" placeholder="password">
-        <p id="err-msg">Wrong email or password!</p>
+        <p id="err-msg-e">Wrong email or username!</p>
+        <p id="err-msg-pw">Wrong password</p>
+        <p id="err-msg">Wrong email/username and password!</p>
         <br>
         <button id="login" onclick="validate()">Login</button>
 
