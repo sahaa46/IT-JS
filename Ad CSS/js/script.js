@@ -55,6 +55,7 @@ function clearForm() {
 */
 
 
+/* Sign up */
 
 
 var users = [];
@@ -243,7 +244,7 @@ function hideErrMsg() {
 
 function getVal(id) {
     return document.getElementById(id).value;
-}
+} * /
 
 
 
