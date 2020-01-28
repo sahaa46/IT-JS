@@ -1,0 +1,27 @@
+.blog {
+    background: #ccc;
+    padding: 5px 10px;
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.blog h1 {
+    margin: 2px;
+    color: darkred;
+}
+
+.blog span {
+    color: darkred;
+    font-weight: bolder;
+}
+
+.special {
+    background:darkred;
+    color: white;
+}
+
+.not-special {
+    background: yellow;
+    color: black;
+}
