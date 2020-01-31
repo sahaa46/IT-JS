@@ -45,6 +45,7 @@
 
 /* Sign up */
 
+/*
 body {
     padding: 0;
     margin: auto;
@@ -163,6 +164,12 @@ body {
 #h1 {
     text-align: center;
 }
+*/
+
+body {
+    background: black;
+}
+
 
 
 

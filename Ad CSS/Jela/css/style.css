@@ -174,6 +174,8 @@
 
 /* Keyframe animation */
 
+/*
+
 @keyframes prva {
     0%{
         top: 0;
@@ -219,6 +221,93 @@
     padding: 0px;
 }
 
+*/
 
+.first {
+    width: 350px;
+    height: 600px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+}
 
+.ugasen {
+    background-color: black;
+}
 
+.segment {
+    width: 200px;
+    height: 7px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px red;
+}
+
+.s1 {
+    width: 250px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.s2 {
+    width: 200px;
+    height: 10px;
+    background: red;
+    transform: rotate(90deg);
+    top: 155px;
+    left: 205px;
+    position: absolute;
+}
+
+.s3 {
+    width: 250px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    opacity: 0.2;
+}
+
+.s4 {
+    width: 200px;
+    height: 10px;
+    background: red;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 155px;
+    left: -55px
+}
+
+.s5 {
+    width: 200px;
+    height: 10px;
+    background: red;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 365px;
+    left: -55px
+}
+
+.s6 {
+    width: 250px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    top: 470px;
+    left: 50px
+}
+
+.s7 {
+    width: 200px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 365px;
+    left: 205px
+}
