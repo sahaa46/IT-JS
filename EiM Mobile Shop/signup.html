@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EiM Mobile Shop - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js "></script>
+</head>
+
+<body ng-app="myApp">
+
+    <div id="header">
+        <a href="signup.html" id="signup">Sign Up</a>
+        <a href="login.html" id="login">Login</a>
+
+    </div>
+
+    <div id="eim">
+        <a href="index.html">EIM MOBILE SHOP</a>
+    </div>
+
+    <div id="welcome">
+        <h1>Sign Up</h1>
+    </div>
+
+
+
+    <div ng-controller="MainCtrl">
+        <form id="signupform">
+
+            <input type="text" placeholder="First name" id="firstname" ng-model="user.firstname">
+            <br>
+            <input type="text" placeholder="Last name" id="lastname" ng-model="user.lastname">
+            <br>
+            <input type="email" placeholder="Email" id="email" ng-model="user.email">
+            <br>
+            <input type="text" placeholder="Username" id="username" ng-model="user.username">
+            <br>
+            <input type="password" placeholder="Password" id="password">
+            <br>
+            <button id="signupbtn" ng-click="add()">Sign Up</button>
+            <button id="clearbtn">Clear</button>
+
+        </form>
+
+        <table id="table">
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Action</th>
+            </tr>
+            <tr ng-repeat="x in users track by $index"">
+                <td>{{x.firstname}}</td>
+                <td>{{x.lastname}}</td>
+                <td>{{x.email}}</td>
+                <td>{{x.username}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div id="footer">
+        <div id="rights">
+            <span>All rights reserved! © EiM - 2020</span>
+        </div>
+        <div id="emailfoot">
+            <span>eminfb@live.com</span>
+        </div>
+        <div id="contact">
+            <img src="imgs/phone.png" alt="call" id="callicon">
+            <span>062/387-604</span>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body ng-app="myApp">
+
+</html>

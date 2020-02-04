@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EiM Mobile Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js "></script>
+</head>
+
+<body ng-contoller="MainCtrl">
+
+    <div id="header">
+        <a href="signup.html" id="signup">Sign Up</a>
+        <a href="login.html" id="login">Login</a>
+        
+    </div>
+
+    <div id="eim">
+        <a href="index.html">EIM MOBILE SHOP</a>
+    </div>
+
+    <div id="welcome">
+        <h1>WELCOME</h1>
+    </div>
+
+    <div id="imgs">
+        <div id="img1">
+            <img src="imgs/2.jpg" alt="samsung" id="samsung">
+            <img src="imgs/s10.jpg" alt="s10" id="s10">
+        </div>
+    </div>
+
+    <input type="text" placeholder="Add user" id="firstname" ng-model="user.oneUser">
+    <button id="signupbtn" ng-click="add()">Sign Up</button>
+    <div ng-repeat="user in users">
+    <span>{{user.user}}</span>
+    </div>
+
+    <div id="footer">
+        <div id="rights">
+            <span>All rights reserved! © EiM - 2020</span>
+        </div>
+        <div id="emailfoot">
+            <span>eminfb@live.com</span>
+        </div>
+        <div id="contact">
+            <img src="imgs/phone.png" alt="call" id="callicon">
+            <span>062/387-604</span>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

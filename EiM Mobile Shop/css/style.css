@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-variant-caps: inherit;
+    font-variant-numeric: inherit;
+    font-variant-east-asian: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+#header {
+    background-color: rgb(39, 39, 39);
+    color: rgba(252, 252, 252, 0.65);
+    overflow: hidden;
+    padding: 20px 50px 20px 0px;
+}
+
+#login {
+    float: right;
+    color: rgba(252, 252, 252, 0.65);
+    text-decoration: none;
+}
+
+#signup {
+    float: right;
+    color: rgba(252, 252, 252, 0.65);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+#login:hover {
+    color: #fcfcfc;
+}
+
+#signup:hover {
+    color: #fcfcfc;
+}
+
+#eim {
+    background-color: rgb(51, 51, 51);
+    color: #fcfcfc;
+    overflow: hidden;
+    padding: 20px 0px 20px 50px;
+}
+
+#eim a {
+    color: #fcfcfc;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#eim h1 {
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-variant-caps: inherit;
+    font-variant-numeric: inherit;
+    font-variant-east-asian: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: 30px;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+#welcome {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#imgs {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+}
+
+#samsung {
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#s10 {
+    float: right;
+    width: 500px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#footer {
+    background-color: rgb(39, 39, 39);
+    color: rgba(252, 252, 252, 0.65);
+    padding-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#rights {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#emailfoot {
+    float: right;
+    font-size: 17px;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+
+#emailfoot:hover {
+    color: #fcfcfc;
+}
+
+#contact {
+    float: right;
+    font-size: 17px;
+}
+
+#contact:hover {
+    color: #fcfcfc;
+}
+
+#callicon {
+    width: 9px;
+}
+
+/* Login */
+
+#loginform {
+    text-align: center;
+}
+
+#usremail {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#password {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#loginbtn {
+    width: 70px;
+    height: 25px;
+    margin-right: 10px;
+    background: rgb(39, 39, 39);
+    color: #fcfcfc;
+}
+
+#loginbtn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+#clearbtn {
+    width: 70px;
+    height: 25px;
+    background: rgb(39, 39, 39);
+    color: #fcfcfc;
+}
+
+#clearbtn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+/* Sign Up */
+
+#signupform {
+    text-align: center;
+}
+
+#firstname {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#lastname {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#email {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#username {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 25px;
+}
+
+#signupbtn {
+    width: 70px;
+    height: 25px;
+    margin-right: 10px;
+    background: rgb(39, 39, 39);
+    color: #fcfcfc;
+}
+
+#signupbtn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+/* Table */
+
+#table {
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+#table th {
+    border: 1px solid black;
+    padding: 5px 30px 5px 30px;
+}
+
+#allusers {
+    text-align: center;
+}
