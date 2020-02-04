@@ -17,11 +17,24 @@
 }
 
 .special {
-    background:darkred;
+    background: darkred;
     color: white;
 }
 
 .not-special {
     background: yellow;
     color: black;
+}
+
+#fulldiv {
+    background: black;
+    color: green;
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+}
+
+i {
+    color: white;
+    padding-left: 5px;
 }

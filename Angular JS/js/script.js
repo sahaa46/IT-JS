@@ -73,6 +73,7 @@ var app = angular.module('myApp', [])
 
 /* LIKE DISLIKE */
 
+/*
 var app = angular.module('myApp', [])
     .controller('controller', function ($scope) {
 
@@ -92,6 +93,70 @@ var app = angular.module('myApp', [])
             lang.dislikes++;
         }
     });
+*/
+
+
+/* Heros */
+
+/*
+var app = angular.module("myApp", []);
+app.controller("controller", function ($scope) {
+    $scope.heros = ["Magneta", "Bombosta", "Celerios", "Rania"];
+    $scope.addHero = function () {
+        $scope.heros.push($scope.addNew);
+    }
+    $scope.removeHero = function (item) {
+        var index = $scope.heros.indexOf(item);
+        $scope.heros.splice(index, 1);
+    }
+});
+*/
+
+
+var app = angular.module("myApp", []);
+app.controller("controller", function ($scope) {
+
+    $scope.folder = {
+        naziv: 'angular-tour-of-heroes',
+        isCollapsed = false,
+        children: [
+            { naziv: 'e2e' },
+            { naziv: 'node_modules' },
+            {
+                naziv: 'src',
+                children: [
+                    {
+                        naziv: 'app',
+                        children: [
+                            {
+                                naziv: 'heroes',
+                                children: [
+                                    { naziv: 'heroes.component.css' },
+                                    { naziv: 'heroes.component.html' },
+                                    { naziv: 'heroes.component.spec.ts' },
+                                    { naziv: 'heroes.component.ts' },
+                                ]
+                            },
+                            { naziv: 'app.component.css' },
+                            { naziv: 'app.component.html' },
+                            { naziv: 'app.component.spec.ts' },
+                            { naziv: 'app.component.ts' },
+                            { naziv: 'app.module.ts' },
+                        ]
+                    }
+                ]
+            }
+        ]
+    };
+
+$scope.collapse = function (folder) {
+    folder.isCollapsed = !folder.isCollapsed;
+}
+
+
+});
+
+
 
 
 
