@@ -12,6 +12,8 @@ body {
     font-family: inherit;
 }
 
+            /* Header */
+
 #header {
     background-color: rgb(39, 39, 39);
     color: rgba(252, 252, 252, 0.65);
@@ -66,6 +68,8 @@ body {
     font-family: inherit;
 }
 
+            /* Main */
+
 #welcome {
     color: rgb(51, 51, 51);
     text-align: center;
@@ -91,6 +95,13 @@ body {
     height: 300px;
     margin-bottom: 30px;
 }
+
+#shoplist {
+    float: left;
+    margin-top: 10px;
+}
+
+            /* Footer */
 
 #footer {
     background-color: rgb(39, 39, 39);
@@ -130,7 +141,7 @@ body {
     width: 9px;
 }
 
-/* Login */
+            /* Login */
 
 #loginform {
     text-align: center;
@@ -171,7 +182,7 @@ body {
     background-color: rgb(51, 51, 51);
 }
 
-/* Sign Up */
+            /* Sign Up */
 
 #signupform {
     text-align: center;
@@ -226,8 +237,4 @@ body {
 #table th {
     border: 1px solid black;
     padding: 5px 30px 5px 30px;
-}
-
-#allusers {
-    text-align: center;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,18 +10,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js "></script>
 </head>
 
-<body ng-contoller="MainCtrl">
+<body ng-app="myApp" ng-controller="MainCtrl">
 
+    <!-- Header -->
     <div id="header">
         <a href="signup.html" id="signup">Sign Up</a>
         <a href="login.html" id="login">Login</a>
-        
     </div>
 
     <div id="eim">
         <a href="index.html">EIM MOBILE SHOP</a>
     </div>
 
+    <!-- Main -->
     <div id="welcome">
         <h1>WELCOME</h1>
     </div>
@@ -33,12 +34,16 @@
         </div>
     </div>
 
-    <input type="text" placeholder="Add user" id="firstname" ng-model="user.oneUser">
-    <button id="signupbtn" ng-click="add()">Sign Up</button>
-    <div ng-repeat="user in users">
-    <span>{{user.user}}</span>
+    <div id="shoplist">
+        <ul>
+            <li ng-repeat="x in products">{{x}}</li>
+        </ul>
+        <input ng-model="addMe" placeholder="Add new phone">
+        <button ng-click="addItem()">Add</button>
+        <button ng-click="removeItem($index)">Remove</button>
     </div>
 
+    <!-- Footer -->
     <div id="footer">
         <div id="rights">
             <span>All rights reserved! © EiM - 2020</span>
