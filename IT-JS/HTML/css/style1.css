@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(24, 21, 21);
+    margin: 55px;
+    text-align: justify;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#mydiv {
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    border: 2px white solid;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: darkred;
+}
+
+a:hover {
+    color: red;
+}
+
+img {
+    width: 20%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 39%;
+}
+
+div {
+    padding-top: 15px;
+    padding-left: 59.1%; 
+    margin-right: 20px;
+}
+
+#a1 {
+    padding-right: 10px;
+}
