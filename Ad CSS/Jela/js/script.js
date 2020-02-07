@@ -47,11 +47,13 @@ function showMeals() {
 function transfer() {
     for (var i = 0; i < allmeals.length; i++) {
         var res = document.getElementById('  ')
-        
+
     }
 }
 */
 
+
+/*
 function brojcanik(id) {
     var sviSegmenti = [];
     var clock = document.getElementById(id);
@@ -87,7 +89,7 @@ function brojcanik(id) {
 
 var br1 = brojcanik('clock');
 br1.setTime(1);
-
+*/
 
 
 
