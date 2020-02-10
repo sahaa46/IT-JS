@@ -77,27 +77,33 @@ body {
 }
 
 #imgs {
+    display: flex;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
+}
+
+#img1 {
+    display: flex;
+    margin-right: 150px;
 }
 
 #samsung {
-    float: left;
-    width: 500px;
-    height: 300px;
-    margin-bottom: 30px;
+    width: 550px;
+    height: 350px;
+}
+
+#img2 {
+    display: flex;
 }
 
 #s10 {
-    float: right;
-    width: 500px;
-    height: 300px;
-    margin-bottom: 30px;
+    width: 550px;
+    height: 350px;
 }
 
 #shoplist {
-    float: left;
+    display: flex;
     margin-top: 10px;
 }
 
@@ -107,9 +113,10 @@ body {
     background-color: rgb(39, 39, 39);
     color: rgba(252, 252, 252, 0.65);
     padding-bottom: 15px;
-    position: absolute;
+    display: flex;
     bottom: 0;
     width: 100%;
+    margin-top: 50px;
 }
 
 #rights {

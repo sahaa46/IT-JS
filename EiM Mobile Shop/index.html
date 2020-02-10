@@ -30,8 +30,21 @@
     <div id="imgs">
         <div id="img1">
             <img src="imgs/2.jpg" alt="samsung" id="samsung">
+        </div>
+        <div id="img2">
             <img src="imgs/s10.jpg" alt="s10" id="s10">
         </div>
+
+    </div>
+
+    <div id="quiz">
+        <ul>
+            <li ng-repeat="x in phones">{{x}}</li>
+        </ul>
+        Type name of phones from picture
+        <input placeholder="First image" ng-model="addIt">
+        <input placeholder="Second image" ng-model="addIt2">
+        <button ng-click="checkPhones()">Check</button>
     </div>
 
     <div id="shoplist">
@@ -42,6 +55,8 @@
         <button ng-click="addItem()">Add</button>
         <button ng-click="removeItem($index)">Remove</button>
     </div>
+
+   
 
     <!-- Footer -->
     <div id="footer">
