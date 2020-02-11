@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.min.js"></script>
+    <title>MAMP AngularJS</title>
+</head>
+
+<body ng-app="app">
+
+    <a href="#!">Home Page</a><br>
+    <a href="#!login">Login Page</a><br>
+    <a href="#!productAdmin">Admin Page</a><br>
+    <hr>
+
+    <div ng-view></div>
+
+
+
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <script src="home/homeController.js"></script>
+    <script src="login/loginController.js"></script>
+    <script src="products/productAdminController.js"></script>
+    <script src="shared/directive/clock.directive.js"></script>
+    <script src="shared/services/loginService.js"></script>
+</body>
+
+</html>
