@@ -1,0 +1,146 @@
+/* 
+p {
+    background: lime;
+    padding: 20px;
+    color: #fff;
+    border: 1px solid black;
+    font-size: 22px;
+    b {
+        font-size: 22px;
+        color: black;
+    }
+}
+*/
+
+/* GRID */
+/*
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 50px;
+    grid-template-columns: repeat(5, 20%);
+    div {
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+
+
+.col1 {
+    background: orange;
+    grid-column: 1 / 4;
+}
+
+.col2 {
+    background: red;
+}
+
+.col3 {
+    background: darkred;
+}
+
+.col4 {
+    background: yellowgreen;
+}
+
+.col5 {
+    background: palevioletred;
+}
+
+.col6 {
+    background: black;
+}
+
+.col7 {
+    background: blue;
+}
+
+.col8 {
+    background: blueviolet;
+}
+
+.col9 {
+    background: grey;
+}
+*/
+
+/*
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-template-rows: 40px 120px;
+
+    div {
+        color: white;
+        padding: 10px;
+    }
+}
+
+.col1 {
+    background: orange;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.col2 {
+    background: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.col3 {
+    background: grey;
+}
+
+.col4 {
+    background: purple;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+*/
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(5, 20%);
+ 
+    div {
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid whitesmoke;
+        padding: 10px;
+        color: #fff;
+    }
+}
+ 
+.col1 {
+    background: orange;
+    grid-column-start: 3 span;
+}
+ 
+.col2 {
+    background: red;
+    grid-column-start: 2 span;
+}
+.col3 {
+    background: lightgrey;
+    grid-row-start: 2 span;
+    grid-column-start: 2 span;
+}
+.col4 {
+    background: lightblue;
+    grid-column-start: 3 span;
+}
+.col5 {
+    background: burlywood;
+    grid-column-start: 1 span;
+ 
+}
+.col6 {
+    background: purple;
+    grid-column-start: 3 span;
+}
+
+
+
