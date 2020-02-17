@@ -28,22 +28,7 @@ app.controller("MainCtrl", function ($scope) {
             alert('Wrong')
         }
     }
-    /*
-    $scope.obj.push($scope.userFirstname);
-    $scope.users.push($scope.userLastname);
-    $scope.users.push($scope.userEmail);
-    $scope.users.push($scope.userUsername);
-*/
-    $scope.users = [];
-    $scope.addUser = function () {
-        for (var i = 0; i < 10; i++) {
-            users.push({
-                'firstname': '$scope.userFirstname'
-            });
-            console.log(JSON.stringify(users));
-        };
 
-    }
 
     /* Edit me */
 
@@ -58,5 +43,42 @@ app.controller("MainCtrl", function ($scope) {
         e.stopPropagation();
         $scope.showtooltip = !$scope.showtooltip;
     }
+
+
+    /* Sign up */
+
+    function clearUser () {
+        var fields = ['firstname', 'lastname', 'email', 'username', 'password']
+        for (const field of fields) {
+            resetVal(field);
+        }
+    }
+
+    $scope.users = [{
+        firstname: 'Emin',
+        lastname: 'Sahat',
+        email: 'eminfb@live.com',
+        username: 'sahaa46',
+        password: '1234'
+    }];
+
+    $scope.newUser = {};
+
+
+    $scope.addUser = function () {
+        $scope.users.push($scope.newUser);
+        $scope.newUser = {};
+        console.log($scope.users);
+
+    }
+
+    $scope.selectUser = function (user) {
+        console.log(user);
+        $scope.clickedUser = user;
+    };
+
+    $scope.deleteUser = function () {
+        $scope.users.splice($scope.users.indexOf($scope.clickedUser), 1);
+    };
 });
 

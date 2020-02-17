@@ -32,18 +32,18 @@
     <div ng-controller="MainCtrl">
         <form id="signupform">
 
-            <input type="text" placeholder="First name" id="firstname" ng-model="userFirstname">
+            <input type="text" placeholder="First name" id="firstname" ng-model="newUser.firstname">
             <br>
-            <input type="text" placeholder="Last name" id="lastname" ng-model="userLastname">
+            <input type="text" placeholder="Last name" id="lastname" ng-model="newUser.lastname">
             <br>
-            <input type="email" placeholder="Email" id="email" ng-model="userEmail">
+            <input type="email" placeholder="Email" id="email" ng-model="newUser.email">
             <br>
-            <input type="text" placeholder="Username" id="username" ng-model="userUsername">
+            <input type="text" placeholder="Username" id="username" ng-model="newUser.username">
             <br>
             <input type="password" placeholder="Password" id="password">
             <br>
-            <button id="signupbtn" ng-click="addUser()">Sign Up</button>
-            <button id="clearbtn">Clear</button>
+            <button id="signupbtn" ng-click="addUser()">Add</button>
+            <button id="clearbtn" ng-click="clearUser()">Clear</button>
 
         </form>
 
@@ -55,11 +55,15 @@
                 <th>Username</th>
                 <th>Action</th>
             </tr>
-            <tr ng-repeat="x in users track by $index">
-                <td>{{x.firstname}}</td>
-                <td>{{x.lastname}}</td>
-                <td>{{x.email}}</td>
-                <td>{{x.username}}</td>
+            <tr ng-repeat="user in users">
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.username}}</td>
+                <td>
+                    <button ng-click="selectUser(user)">Select</button>
+                    <button ng-click="deleteUser()">Delete</button>
+                </td>
             </tr>
         </table>
     </div>
