@@ -1,0 +1,60 @@
+body {
+    background-color: #89D6D9;
+    padding: 20px;
+}
+
+table {
+    border: solid;
+    border-color: #CCCCCC;
+}
+
+tr {
+    border-color: #CCCCCC;
+}
+
+th {
+    background-color: #ECE7D7;
+    text-align: center;
+    border: 1px #cccccc solid;
+}
+
+td {
+    background-color: #F5F4F2;
+    border: 1px #cccccc solid;
+}
+
+#naslov {
+    align-content: center;
+}
+
+#div1 {
+    margin:auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 960px;
+}
+
+img {
+    padding: 10px;
+    width: 100px;
+}
+
+#div2 {
+    background-color: #DDDDDD;
+    padding-bottom: 20px;
+}
+
+#tekst {
+    padding: 10px;
+    text-align: justify;
+}
+
+a {
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #FFFFFF;
+}

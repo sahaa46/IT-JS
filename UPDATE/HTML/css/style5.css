@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+h1 {
+    background-color: darkred;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.wrapper {
+    background-color: darkgray
+}
+
+.box {
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: darkred;
+}
+
+p {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: black;
+}
+
+.box2 {
+    background-color: rgb(36, 36, 36);
+    position: relative;
+}
+
+.box3 {
+    background-color: rgb(109, 108, 108);
+}
+
+.box4 {
+    background-color: rgb(152, 152, 152);
+}
+
+.footer {
+    background-color: darkred;
+    height: 900px;
+}

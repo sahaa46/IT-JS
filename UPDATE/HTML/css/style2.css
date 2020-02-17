@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(24, 21, 21);
+    margin: 55px;
+    text-align: justify;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color:darkred;
+}
+a:hover {
+    color: red;
+}
+
+div {
+    padding-top: 15px;
+    padding-left: 85%; 
+    margin-right: 20px;
+    font-size: 35px;
+}
+
+#a1 {
+    padding-right: 10px;
+}
+

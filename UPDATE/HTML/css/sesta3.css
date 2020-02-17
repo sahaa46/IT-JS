@@ -1,0 +1,45 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 500px;
+    background-color: lightblue;
+}
+
+h1 {
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+input {
+    margin: 3px;
+}
+
+.div1 {
+    margin-left: 20px;
+    
+}
+
+#signup {
+    background-color: rgb(94, 213, 94);
+    color: white;
+    border: 1px solid darkgreen;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.clase {
+}
+
+.labels {
+    clear: left;
+}

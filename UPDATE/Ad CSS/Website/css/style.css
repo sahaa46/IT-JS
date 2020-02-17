@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#first {
+    background: #f5ed00;
+    height: 100px;
+    color: gray;
+    text-align: center;
+    justify-content: center;
+}
+
+#first h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    color: white;
+    background: #1abc9c;
+    height: 250px;
+    text-align: center;
+}
+
+#header h1, h5 {
+    margin-top: 0;
+    padding: 0;
+}
+
+#navigation {
+    background: #333;
+    height: 40px;
+    padding-top: 18px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+}
+
+a:hover {
+    background: white;
+    color: black;
+}
+
+#container {
+    display: flex;
+}
+
+#leftdiv {
+    background: #f1f1f1;
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#rightdiv {
+    width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#img1 {
+    background: #aaa;
+    height: 200px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.img2 {
+    background: #aaa;
+    height: 100px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.img3 {
+    background: #aaa;
+    height: 200px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    background: #ddd;
+    font-size: 25px;
+    padding: 10px 15px;
+} 
+
+@media screen and (max-width: 700px) {
+    #container {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,199 @@
+/* 
+.kocka {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    transition: all 3s ease;
+    text-transform: uppercase;
+    font-size: 32px;
+    background: black;
+    color: white;
+}
+
+.div1 {
+    transition: all 3s ease 1s;
+}
+
+.div2 {
+    transition: all 3s ease .8s;
+}
+
+.div3 {
+    transition: all 3s ease 2s;
+}
+
+.div4 {
+    transition: all 3s ease 3s;
+}
+
+.div5 {
+    transition: all 3s ease 2s;
+}
+
+.kocka:hover {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+}
+
+.main {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    padding: 0px;
+}
+
+.main:hover .div1 {
+    margin-left: 349px;
+    margin-top: 349px;
+    background-color: brown;
+    transform: rotate(720deg);
+}
+/*
+.main:hover .div2 {
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: orange;
+    transform: rotate(620deg);
+}
+
+.main:hover .div3 {
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: yellowgreen;
+    transform: rotate(520deg);
+}
+
+.main:hover .div4 {
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: purple;
+    transform: rotate(420deg);
+}
+
+.main:hover .div5 {
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: teal;
+    transform: rotate(320deg);
+}
+*/
+
+/*
+.circle {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: black;
+}
+
+.circle:hover {
+    background-color: #a3a5a1;
+    transition: all .7s ease 1.3s;
+}
+*/
+
+/* Keyframe animation */
+
+/*
+
+@keyframes prva {
+    0%{
+        top: 0;
+    }
+    25%{
+        top: 75px;
+        left:0;
+    }
+    50%{
+        top: 50px;
+        left:50px;
+    }
+    75%{
+        top:0;
+        left:50px;
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}
+
+.kocka {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    transition: all 3s ease;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    background: black;
+    animation-name: prva;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 4;
+    animation-direction: reverse;
+}
+
+.main {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+    padding: 0px;
+}
+
+*/
+
+/* CARD */
+
+#main {
+    width: 500px;
+    height: 900px;
+    background: cornsilk;
+    margin: auto;
+}
+
+#card {
+    width: 330px;
+    height: 700px;
+    background: white;
+    margin-left: 100px;
+    box-shadow: 3px 6px 11px;
+}
+
+#img {
+    width: 100%;
+}
+
+#naslov {
+    text-align: center;
+}
+
+#price {
+    text-align: center;
+    opacity: 0.2;
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button {
+    border: 0;
+    margin-top: 21px;
+    outline: none;
+    background: black;
+    color: white;
+    padding: 20px 50px 20px 50px;
+    width: 100%;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.25;
+    cursor: pointer;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Angular JS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js "></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 
+    <div ng-controller='kontroler'>
+        10 + 20 = {{ 10 + 20 }}
+        <input type="text" ng-model="user.name">
+        <button ng-click='addTodo'>Add Todo</button>
+        <span>{{user.name}}</span>
+        <h3>{{user.lastname}}</h3>
+        <h3>{{user.adresa}}</h3>
+        <img ng-src="{{user.slika}}" alt="Slika usera">
+        <div id="todos">
+            <div ng-repeat='todo in todos'>
+                <input type='checkbox'>
+                <span>{{item.name}}</span>
+                <button>Delete</button>
+            </div>
+        </div>
+    </div>
+-->
+
+    <!-- 
+    <div ng-controller='controller'> 
+        <h3>{{user.name}}</h3><br>
+        <h3>{{user.lastname}}</h3><br>
+        <h3>{{user.adresa}}</h3><br>
+        <h3>{{user.godine}} godine</h3><br>
+        <img ng-src="{{user.img}}">
+    </div>
+-->
+
+    <div ng-controller='controller'>
+
+        <!-- 
+<select>
+    <option>Select user</option>
+    <option ng-repeat="u in users">{{u.name}}</option>
+</select>
+
+        <div class="blog" ng-repeat="item in blogs">
+            <h1>{{item.name}}</h1>
+            <p>{{item.text}}</p>
+            <span ng-repeat="comment in item.comments">{{comment + "  "}}</span>
+        </div>
+    </div>
+-->
+
+        <!-- 
+        <table border="2">
+            <tr>
+                <th>Id#</th>
+                <th>Naziv bloga</th>
+                <th>Text</th>
+                <th>Akcije</th>
+            </tr>
+            <tr ng-repeat='item in blogs'>
+                <td>{{$index}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.text}}</td>
+                <td>
+                    <button ng-click="updateBlog(item)">Update</button>
+                    <button ng-click="deleteBlog($index)">Delete</button>
+                </td>
+            </tr>
+        </table>
+-->
+
+        <!-- Like and dislike-->
+        <!-- 
+        <input value="4" type="number" ng-model="numberOfPages" placeholder="Limit results">
+        <hr>
+        <input type="text" ng-model="query" placeholder="Search by name">
+        <hr>
+        <table border="2">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Likes</th>
+                <th>Dislikes</th>
+                <th>Like/Dislike</th>
+            </tr>
+            <tr ng-repeat='lang in langs | filter:query'>
+                <td>{{$index}}</td>
+                <td>{{lang.name | uppercase}}</td>
+                <td ng-class="{special: lang.price > 1000, 'not-special':lang.price < 1000}">
+                    {{lang.price | currency:'BAM':1}}</td>
+                <td>{{lang.datum | date: 'dd-MMMM-yyyy'}}</td>
+                <td>{{lang.likes}}</td>
+                <td>{{lang.dislikes}}</td>
+                <td>
+                    <button ng-click="like(lang);">Like</button>
+                    <button ng-disabled="lang.dislikes > 2" ng-click="dislike(lang);">Dislike</button>
+                </td>
+            </tr>
+        </table>
+-->
+
+
+        <!-- Heros -->
+        <!-- 
+        <div id="herolist">
+            Hero name <input ng-model="addNew" placeholder="Add hero">
+            <button ng-click="addHero()">Add</button>
+            <button ng-click="removeHero(item)">Remove</button>
+            <ul>
+                <li ng-repeat="x in heros | filter:addNew">{{x}}</li>
+            </ul>
+        </div>
+-->
+
+
+        <div id="fulldiv">
+            <i class="icon ion-md-{{folder.isCollapsed?'cellular':'play'}}"></i>
+            <span style="cursor:pointer;" ng-click="collapse(folder)">{{folder.naziv}}</span>
+            <div ng-if="folder.isCollapsed" style="padding-left: 15px" ng-repeat="item in folder.children">
+                <i class="icon ion-md-play"></i>{{item.naziv}}
+                <div style="padding-left: 30px" ng-repeat="item in item.children">
+                    <i class="icon ion-md-play"></i>{{item.naziv}}
+                    <div style="padding-left: 30px" ng-repeat="item in item.children">
+                        <i ng-if="item.naziv.endsWith('.html')" class="icon ion-md-barcode" ng-if="item.children"></i>
+                        <i ng-if="item.naziv.endsWith('.css')" class="icon ion-md-basketball" ng-if="item.children"></i>
+                        <i ng-if="item.naziv.endsWith('.ts')" class="icon ion-md-star" ng-if="item.children"></i>
+                        {{item.naziv}}
+                        <div style="padding-left: 30px" ng-repeat="item in item.children">
+                            <i ng-if="item.naziv.endsWith('.ts')" class="icon ion-md-star"></i>
+                            <i ng-if="item.naziv.endsWith('.html')" class="icon ion-md-barcode"></i>
+                            <i ng-if="item.naziv.endsWith('.css')" class="icon ion-md-basketball"></i>
+                            {{item.naziv}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>

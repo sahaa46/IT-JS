@@ -1,0 +1,31 @@
+body {
+    margin-top: 70px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#underh {
+    text-align: center;
+    opacity: 80%;;
+    margin-left: 25px;
+}
+
+.logo {
+    width: 7%;
+    position: fixed;
+    left: 38%;
+    top: 5%;
+    margin-right: 20px;
+}
+
+.python{
+    width: 7%;
+    position: absolute;
+    top: 22%;
+    left: 27%;
+}

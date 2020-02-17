@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EiM Mobile Shop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js "></script>
+</head>
+
+<body ng-app="myApp" ng-controller="MainCtrl">
+
+    <!-- Header -->
+    <div id="header">
+        <a href="signup.html" id="signup">Sign Up</a>
+        <a href="login.html" id="login">Login</a>
+    </div>
+
+    <div id="eim">
+        <a href="index.html">EIM MOBILE SHOP</a>
+    </div>
+
+    <!-- Main -->
+    <div id="welcome">
+        <h1>WELCOME</h1>
+    </div>
+
+    <div id="imgs">
+        <div id="img1">
+            <img src="imgs/2.jpg" alt="samsung" id="samsung">
+        </div>
+        <div id="img2">
+            <img src="imgs/s10.jpg" alt="s10" id="s10img">
+        </div>
+
+    </div>
+
+    <div id="quiz">
+            <h3 ng-repeat="x in phones" id="s8">{{x}}</h3>
+        <p>Type name of this phone</p>
+        <input placeholder="Type here" ng-model="addIt">
+        <button ng-click="checkPhones()" id="btn1">Check</button>
+        <ul>
+            <h3 ng-repeat="x in phones2" id="s10">{{x}}</h3>
+        </ul>
+        Type name of this phone
+        <input placeholder="Type here" ng-model="addIt2">
+        <button ng-click="checkPhones2()">Check</button>
+    </div>
+
+
+    <div id="shoplist">
+        <ul>
+            <li ng-repeat="x in products">{{x}}</li>
+        </ul>
+        <input ng-model="addMe" placeholder="Add new phone">
+        <button ng-click="addItem()">Add</button>
+        <button ng-click="removeItem($index)">Remove</button>
+    </div>
+
+    <div id="testme" ng-click="hideTooltip()">
+        <div ng-click="$event.stopPropagation()" ng-show="showtooltip">
+            <input type="text" ng-model="value">
+        </div>
+        <p ng-click="toggleTooltip($event)">{{value}}</p>
+    </div>
+ 
+   
+
+    <!-- Footer -->
+    <div id="footer">
+        <div id="rights">
+            <span>All rights reserved! © EiM - 2020</span>
+        </div>
+        <div id="emailfoot">
+            <span>eminfb@live.com</span>
+        </div>
+        <div id="contact">
+            <img src="imgs/phone.png" alt="call" id="callicon">
+            <span>062/387-604</span>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
