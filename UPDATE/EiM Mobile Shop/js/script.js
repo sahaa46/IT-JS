@@ -47,7 +47,7 @@ app.controller("MainCtrl", function ($scope) {
 
     /* Sign up */
 
-    function clearUser () {
+    function clearUser() {
         var fields = ['firstname', 'lastname', 'email', 'username', 'password']
         for (const field of fields) {
             resetVal(field);
@@ -80,5 +80,15 @@ app.controller("MainCtrl", function ($scope) {
     $scope.deleteUser = function () {
         $scope.users.splice($scope.users.indexOf($scope.clickedUser), 1);
     };
+
+    $scope.check = function () {
+        if (attr.required && ctrl.$isEmpty(value)) {
+            ctrl.$setValidity('required', false);
+            return;
+        } else {
+            ctrl.$setValidity('required', true);
+            return value;
+        }
+    }
 });
 

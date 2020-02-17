@@ -32,24 +32,24 @@
     <div ng-controller="MainCtrl">
         <form id="signupform">
 
-            <input type="text" placeholder="First name" id="firstname" ng-model="newUser.firstname">
+            <input type="text" required placeholder="First name" id="firstname" ng-model="newUser.firstname">
             <br>
-            <input type="text" placeholder="Last name" id="lastname" ng-model="newUser.lastname">
+            <input type="text" required placeholder="Last name" id="lastname" ng-model="newUser.lastname">
             <br>
-            <input type="email" placeholder="Email" id="email" ng-model="newUser.email">
+            <input type="email" required placeholder="Email" id="email" ng-model="newUser.email">
             <br>
-            <input type="text" placeholder="Username" id="username" ng-model="newUser.username">
+            <input type="text" required placeholder="Username" id="username" ng-model="newUser.username">
             <br>
-            <input type="password" placeholder="Password" id="password">
+            <input type="password" required placeholder="Password" id="password">
             <br>
-            <button id="signupbtn" ng-click="addUser()">Add</button>
+            <button id="signupbtn" ng-disabled="userForm.$invalid" ng-click="addUser()">Add</button>
             <button id="clearbtn" ng-click="clearUser()">Clear</button>
 
         </form>
 
         <table id="table">
             <tr>
-                <th>First name</th>
+                <th>First name</th">
                 <th>Last name</th>
                 <th>Email</th>
                 <th>Username</th>
@@ -61,8 +61,8 @@
                 <td>{{user.email}}</td>
                 <td>{{user.username}}</td>
                 <td>
-                    <button ng-click="selectUser(user)">Select</button>
-                    <button ng-click="deleteUser()">Delete</button>
+                    <button id="selectbtn" ng-click="selectUser(user)">Select</button>
+                    <button id="deletebtn" ng-click="deleteUser()">Delete</button>
                 </td>
             </tr>
         </table>
