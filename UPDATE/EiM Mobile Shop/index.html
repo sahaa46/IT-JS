@@ -38,7 +38,7 @@
     </div>
 
     <div id="quiz">
-            <h3 ng-repeat="x in phones" id="s8">{{x}}</h3>
+        <h3 ng-repeat="x in phones" id="s8">{{x}}</h3>
         <p>Type name of this phone</p>
         <input placeholder="Type here" ng-model="addIt">
         <button ng-click="checkPhones()" id="btn1">Check</button>
@@ -60,9 +60,19 @@
         <button ng-click="removeItem($index)">Remove</button>
     </div>
 
-  
- 
-   
+    <div ng-repeat="phone in bestphone" id="bestphone">
+        <div>
+        {{phone.id}}
+        {{phone.name}}
+        {{phone.price}}
+        {{phone.manufacture}}
+        <input type="button" value="Copy" data-ng-click="copyphone($index, phone)" />
+        <input type="button" value="Delete" data-ng-click="deletephone($index)" />
+    </div>
+    </div>
+
+
+
 
     <!-- Footer -->
     <div id="footer">

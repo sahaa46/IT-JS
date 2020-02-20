@@ -29,21 +29,52 @@ app.controller("MainCtrl", function ($scope) {
         }
     }
 
+    /* Best Phone */
+
+    $scope.bestphone = [{
+        id: 1,
+        name: 'Galaxy S20 Ultra',
+        price: '3000',
+        manufacture: 'Samsung'
+    }, {
+        id: 2,
+        name: 'P30 Pro',
+        price: '2000',
+        manufacture: 'Huawei'
+    }, {
+        id: 3,
+        name: '11 Pro Max',
+        price: '3000',
+        manufacture: 'Iphone'
+    }];
+
+
+    $scope.deletephone = function (index) {
+        $scope.bestphone.splice(index, 1)
+    }
+
+    $scope.copyphone = function (index, data) {
+        var newRow = angular.copy(data);
+        $scope.bestphone.push(newRow)
+    }
+
+
+
 
     /* Edit me */
-
-    $scope.showtooltip = false;
-    $scope.value = 'Edit me.';
-
-    $scope.hideTooltip = function () {
+    /*
         $scope.showtooltip = false;
-    }
-
-    $scope.toggleTooltip = function (e) {
-        e.stopPropagation();
-        $scope.showtooltip = !$scope.showtooltip;
-    }
-
+        $scope.value = 'Edit me.';
+    
+        $scope.hideTooltip = function () {
+            $scope.showtooltip = false;
+        }
+    
+        $scope.toggleTooltip = function (e) {
+            e.stopPropagation();
+            $scope.showtooltip = !$scope.showtooltip;
+        }
+    */
 
     /* Sign up */
 
