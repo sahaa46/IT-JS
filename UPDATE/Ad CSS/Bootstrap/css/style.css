@@ -1,0 +1,48 @@
+body {
+    background: black;
+    font-family: 'Lacquer';
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.main {
+    text-align: center;
+}
+
+.wrapper {
+    margin: auto;
+    background-color: dimgray;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.col {
+    background: white;
+    border: 1px solid #ddd;
+    font-size: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+#potez {
+    color: white;
+    text-align: center;
+}
+
+.restart {
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.restart:hover {
+    background: black;
+    color: white;
+}
