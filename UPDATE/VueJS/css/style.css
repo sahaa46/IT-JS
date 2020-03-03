@@ -1,0 +1,62 @@
+#builder {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 350px;
+}
+
+#preview {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    background: black;
+}
+
+#preview2 {
+    margin: auto;
+    width: 40%;
+    background: white;
+    border-top: 15px solid pink;
+    padding: 15px;
+}
+
+#womanlogo {
+    width: 80px;
+    height: 80px;
+}
+
+#h1 {
+    color: gray;
+    margin-left: 200px;
+}
+
+#underh1 {
+    margin-left: 200px;
+}
+
+#graydiv {
+    background-color: gainsboro;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#topdiv {
+    overflow: hidden;
+}
+
+#h1div {
+    float: left;
+}
+
+#imgdiv {
+    float: right;
+}
+
+#sidediv {
+    float: left;
+}
+
+#rightdiv {
+    text-align: justify;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- 
+    <h1>Vue.js</h1>
+
+    <div id="app">
+        <h1>Hehe</h1>
+        <h3>{{msg}}</h3>
+        <h2 v-bind:title="titleMsg">Hover me</h2>
+        <hr>
+        <button @click="showImg($event)">Click me</button>
+        <img v-if="show" v-bind:src="imgUrl" alt="This is some img">
+
+        <ol>
+            <todo-item v-for="todo in todos" v-bind:todo="todo"></todo-item>
+        </ol>
+
+        <input @keyup.enter="logData" v-model="firstName" type="text" placeholder="Emin">
+
+    </div>
+-->
+
+    <div id="builder">
+        <input class="form-control" type="text" placeholder="First name" id="firstname" required>
+        <br>
+        <input class="form-control" type="text" placeholder="Last name" id="lastname" required>
+        <br>
+        <select class="custom-select" name="position" placeholder="position" id="positon">
+            <option value="senior">Senior</option>
+            <option value="junior">Junior</option>
+        </select>
+        <br><br>
+        <input class="form-control" type="text" placeholder="Phone number" id="phonenum" required>
+        <br>
+        <input class="form-control" type="email" placeholder="Email" id="email" required>
+        <br>
+        <input class="form-control" type="text" placeholder="Social media" id="socialmedia">
+        <br>
+        <input class="form-control" type="text" placeholder="Adress" id="adress">
+        <br>
+        <fieldset>
+            <textarea class="form-control" name="education" id="education" cols="30" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <textarea class="form-control" name="experience" id="experience" cols="30" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <button class="btn btn-dark" id="savebtn">Save</button>
+    </div>
+
+    <div id="preview">
+        <div id="preview2">
+            <div id="topdiv">
+                <div id="h1div">
+                    <h1 id="h1">EMIN SAHAT</h1>
+                    <h4 id="underh1">Junior developer</h3>
+                </div>
+                <div id="imgdiv">
+                    <img id="womanlogo"
+                        src="https://lh3.googleusercontent.com/proxy/AQTRuNZ_TTYucTuBw8J6Eh7kP1aMSn-svx1-2Cw7QUvtEgM5cjDF1m9tRfXnOjXyhJ16xzd7YizeMIYW4ECWQgS0AZhDaeZTpf2pGobJ42Zt2YzB5uJ6qrnGE38DFMhx3DsIyyagBBCFRZ4Z0Q"
+                        alt="womanlogo">
+                </div>
+            </div>
+            <div id="graydiv"></div>
+            <div id="sidediv">
+                <h2>CONTACT</h2>
+                <p>062-387/604</p>
+                <p>eminfb@live.com</p>
+                <p>linkedin.com</p>
+                <p>London, UK</p>
+
+                <h2>EDUCATION</h2>
+                <h5>MBA DIPLOMA</h5>
+                <p>London BusinessSchool</p>
+                <p>2016</p>
+                <br>
+                <h5>MBA DIPLOMA</h5>
+                <p>London BusinessSchool</p>
+                <p>2016</p>
+
+                <h2>SKILLS</h2>
+            </div>
+            <div id="rightdiv">
+                <h2>PROFILE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eveniet blanditiis labore,
+                        itaque assumenda pariatur, dolor quae voluptas maxime qui perferendis cupiditate tenetur harum?
+                        Neque ullam optio veniam sed accusamus?</p>
+
+                    <h2>EXPERIENCE</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos earum impedit
+                            blanditiis
+                            dolorum nihil vero, sed voluptatibus tempora ipsum alias vel. Sit enim, eveniet consequuntur
+                            ad
+                            quasi commodi fugiat ab?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
