@@ -33,4 +33,29 @@ var vm = new Vue({
 */
 
 
+var vm = new Vue({
+    el: '#app',
+    data: {
+        firstname: '',
+        lastname: '',
+        position: '',
+        phonenumber: '',
+        email: '',
+        socialmedia: '',
+        adress: '',
+        education: '',
+        experience: '',
+        show: false
+    },
+    methods: {
+        showTemplate: function (evt) {
+            this.show = !this.show;
+        },
+        hideTemplate: function (evt) {
+            this.show = !this.show;
+        }
+    }
+});
+
+
 

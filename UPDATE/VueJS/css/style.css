@@ -1,48 +1,77 @@
+body {
+    background: #2c4969;
+}
+
+#naslov {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+#xbtn {
+    float: right;
+    margin-right: 270px;
+    font-size: 20px;
+}
+
+#savebtn {
+    margin-bottom: 30px;
+}
+
 #builder {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
-    width: 350px;
+    width: 450px;
 }
 
 #preview {
     margin: auto;
     margin-top: 100px;
     text-align: center;
-    background: black;
+    background: #2c4969;
+    height: 1000px;
 }
 
 #preview2 {
     margin: auto;
-    width: 40%;
+    width: 50%;
+    height: 800px;
     background: white;
     border-top: 15px solid pink;
-    padding: 15px;
+    padding: 40px;
+    font-size: 11px;
+}
+
+/* Top div */
+
+#topdiv {
+    overflow: hidden;
 }
 
 #womanlogo {
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 25px;
+    margin-right: 30px;
 }
 
 #h1 {
     color: gray;
-    margin-left: 200px;
+    margin-top: 15px;
+    margin-left: 40px;
 }
 
 #underh1 {
-    margin-left: 200px;
-}
-
-#graydiv {
-    background-color: gainsboro;
-    height: 20px;
-    width: 100%;
+    margin-left: 30px;
     margin-bottom: 30px;
 }
 
-#topdiv {
-    overflow: hidden;
+#graydiv {
+    background-color: rgb(230, 230, 230);
+    height: 20px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 #h1div {
@@ -53,10 +82,99 @@
     float: right;
 }
 
+/* Left div */
+
 #sidediv {
+    float: left;
+    margin-right: 50px;
+}
+
+#contactdiv {
+    margin-bottom: 80px;
+    text-align: justify;
+}
+
+.pngs {
+    width: 15px;
+    height: 17px;
+    margin-right: 20px;
+}
+
+#phonepng {
     float: left;
 }
 
+#emailpng {
+    float: left;
+}
+
+#linkedinpng {
+    float: left;
+}
+
+#locationpng {
+    float: left;
+}
+
+#educationdiv {
+    margin-bottom: 80px;
+    text-align: justify;
+    padding: 0;
+}
+
+#skillsdiv {
+    text-align: justify;
+}
+
+#marketing {
+    margin-right: 25px;
+}
+
+#strategy {
+    margin-right: 33px;
+}
+
+#budget {
+    margin-right: 38px;
+}
+
+#planning {
+    margin-right: 31px;
+}
+
+#presentation {
+    margin-right: 12px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: pink;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.dot2 {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid pink;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.h4s {
+    color: pink;
+    font-size: 18px;
+}
+
+/* Right div */
+
 #rightdiv {
     text-align: justify;
+}
+
+#profilediv {
+    margin-bottom: 40px;
 }
