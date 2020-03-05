@@ -3,40 +3,54 @@ body {
 }
 
 #naslov {
-    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+#naslov2 {
+    margin-bottom: 20px;
     color: white;
     text-align: center;
 }
 
 #xbtn {
     float: right;
-    margin-right: 270px;
+    margin-right: 260px;
     font-size: 20px;
+    width: 50px;
 }
 
 #savebtn {
     margin-bottom: 30px;
+    width: 80px;
+}
+
+#resetbtn {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    width: 80px;
 }
 
 #builder {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
     width: 450px;
 }
 
 #preview {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
     text-align: center;
     background: #2c4969;
-    height: 1000px;
+    height: 900px;
 }
 
 #preview2 {
     margin: auto;
     width: 50%;
-    height: 800px;
+    height: 750px;
     background: white;
     border-top: 15px solid pink;
     padding: 40px;

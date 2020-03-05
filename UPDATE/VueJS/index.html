@@ -33,54 +33,63 @@
 -->
 
     <div id="app">
-        <h1 id="naslov">Create a new CV</h1>
+
 
         <!-- Builder -->
 
         <div id="builder" v-if="!show">
-            <input v-model="firstname" class="form-control" type="text" placeholder="First name" id="firstname"
-                required>
-            <br>
-            <input v-model="lastname" class="form-control" type="text" placeholder="Last name" id="lastname" required>
-            <br>
-            <select v-model="position" class="custom-select" name="position" id="positon">
-                <option disabled value="">Please select one</option>
-                <option value="senior">Senior</option>
-                <option value="junior">Junior</option>
-            </select>
-            <br><br>
-            <input v-model="phonenumber" class="form-control" type="text" placeholder="Phone number" id="phonenum"
-                required>
-            <br>
-            <input v-model="email" class="form-control" type="email" placeholder="Email" id="email" required>
-            <br>
-            <input v-model="socialmedia" class="form-control" type="text" placeholder="Social media" id="socialmedia">
-            <br>
-            <input v-model="adress" class="form-control" type="text" placeholder="Adress" id="adress">
-            <br>
-            <fieldset>
-                <textarea v-model="education" class="form-control" name="education" id="education" cols="30" rows="5"
-                    placeholder="Education"></textarea>
-            </fieldset>
-            <br>
-            <fieldset>
-                <textarea v-model="experience" class="form-control" name="experience" id="experience" cols="30" rows="5"
-                    placeholder="Experience"></textarea>
-            </fieldset>
-            <br>
-            <button @click="showTemplate($event)" class="btn btn-primary" id="savebtn">Save</button>
+            <h1 id="naslov">Create a new CV</h1>
+            <form id="myForm">
+                <input v-model="person.firstname" class="form-control" type="text" placeholder="First name"
+                    id="firstname" required>
+                <br>
+                <input v-model="person.lastname" class="form-control" type="text" placeholder="Last name" id="lastname"
+                    required>
+                <br>
+                <select v-model="person.position" class="custom-select" name="position" id="position">
+                    <option disabled value="">Please select one</option>
+                    <option value="senior">Senior</option>
+                    <option value="junior">Junior</option>
+                </select>
+                <br><br>
+                <input v-model="person.phonenumber" class="form-control" type="text" placeholder="Phone number"
+                    id="phonenum" required>
+                <br>
+                <input v-model="person.email" class="form-control" type="email" placeholder="Email" id="email" required>
+                <br>
+                <input v-model="person.socialmedia" class="form-control" type="text" placeholder="Social media"
+                    id="socialmedia">
+                <br>
+                <input v-model="person.adress" class="form-control" type="text" placeholder="Adress" id="adress">
+                <br>
+                <fieldset>
+                    <textarea v-model="person.education" class="form-control" name="education" id="education" cols="30"
+                        rows="5" placeholder="Education"></textarea>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <textarea v-model="person.experience" class="form-control" name="experience" id="experience"
+                        cols="30" rows="5" placeholder="Experience"></textarea>
+                </fieldset>
+                <br>
+                <button @click="showTemplate($event)" class="btn btn-primary" id="savebtn">Save</button>
+                <button @click="resetFields" class="btn btn-primary" id="resetbtn">Reset</button>
+            </form>
         </div>
+
+
 
         <!-- Preview -->
 
         <div id="preview" v-if="show">
-            <button class="btn btn-primary" id="xbtn" @click="hideTemplate($event)">X</button>
+            <h1 id="naslov2">Preview</h1>
+            <button class="btn btn-primary" id="xbtn" @click="showTemplate($event)">X</button>
             <div id="preview2">
 
                 <div id="topdiv">
                     <div id="h1div">
-                        <h1 id="h1">{{firstname}} {{lastname}}</h1>
-                        <h6 id="underh1">{{position}}</h6>
+                        <h1 id="h1">{{person.firstname}} {{person.lastname}}</h1>
+                        <h6 id="underh1">{{person.position}}</h6>
                     </div>
                     <div id="imgdiv">
                         <img id="womanlogo" src="img/womanlogo.png" alt="womanlogo">
@@ -93,13 +102,13 @@
                     <div id="contactdiv">
                         <h4 class="h4s">C O N T A C T</h4>
                         <img class="pngs" id="phonepng" src="img/phone.png" alt="phone">
-                        <p>{{phonenumber}}</p>
+                        <p>{{person.phonenumber}}</p>
                         <img class="pngs" id="emailpng" src="img/email.png" alt="email">
-                        <p>{{email}}</p>
+                        <p>{{person.email}}</p>
                         <img class="pngs" id="linkedinpng" src="img/linkedin.png" alt="linkedin">
-                        <p>{{socialmedia}}</p>
+                        <p>{{person.socialmedia}}</p>
                         <img class="pngs" id="locationpng" src="img/location.png" alt="location">
-                        <p>{{adress}}</p>
+                        <p>{{person.adress}}</p>
                     </div>
 
                     <div id="educationdiv">
@@ -116,7 +125,7 @@
                         <span>Wimbeldon High School</span>
                         <p>2004</p>
                         -->
-                        <span>{{education}}</span>
+                        <span>{{person.education}}</span>
                     </div>
 
                     <div id="skillsdiv">
@@ -178,11 +187,13 @@
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit Undet.</li>
                     </ul>
                     -->
-                    <span>{{experience}}</span>
+                    <span>{{person.experience}}</span>
                 </div>
             </div>
         </div>
     </div>
+
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
