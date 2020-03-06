@@ -1,0 +1,56 @@
+body {
+    margin: auto;
+    padding: 0;
+    background: url('https://i.pinimg.com/originals/b5/05/e9/b505e90552d3fb7e7601de546020b635.jpg');
+}
+
+#naslov {
+    text-align: center;
+    margin-bottom: 70px;
+    color: white;
+    margin-top: 80px;
+    font-size: 60px;
+}
+
+#inputs {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+}
+
+#addbtn {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 150px;
+}
+
+#allbtn {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+#search {
+    margin-top: 20px;
+    width: 70%;
+    float: left;
+}
+
+#searchbtn {
+    margin-top: 20px;
+    width: 28%;
+    overflow: hidden;
+    float: right;
+}
+
+#gobackbtn {
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 150px;
+}
+
+#card {
+    width: 300px;
+    height: 400px;
+    background: black;
+}
